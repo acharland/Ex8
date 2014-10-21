@@ -38,8 +38,8 @@ Sorting1(member);
 }
 add('CS', 'Mathieu', 'Martin', 'md@gmail.com', member);
 }
-
-void main() { // Inspiré d'un collègue, Monsieur Olivier Tremblay
+// Unable to do the removal and the update
+void main() { // Inspired by a colleague, Mr Olivier Tremblay
 ex08_1(); 
 ex08_2(); 
 }
