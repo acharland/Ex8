@@ -44,13 +44,6 @@ print_row(member);
 Sorting1(member);
 }
 add('CS', 'Mathieu', 'Martin', 'md@gmail.com', member);
-remove(var association_name, var first_name, var last_name, var email, var member){
-member.remove({
-'association_name': association_name,
-'first_name': first_name,
-'last_name': last_name,
-'email': email,
-});
 Sorting1(var member){
 member.sort((x, y) => x['last_name'].compareTo(y['first_name']));
 print('The list with the addition of Mathieu Martin:');
