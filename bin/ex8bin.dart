@@ -21,13 +21,6 @@ void ex08_2(){
   print('');
 print('Q2');
 print('');
-test(var first_name, var last_name, var member){
-for(var n in member){
-if(n['first_name'] == first_name && n['last_name'] == last_name)
-return true;
-}
-return false;
-}
 add(var association_name, var first_name, var last_name, var email, var member){
 member.add({
 'associationn_name': association_name,
@@ -44,17 +37,7 @@ print_row(member);
 Sorting1(member);
 }
 add('CS', 'Mathieu', 'Martin', 'md@gmail.com', member);
-Sorting1(var member){
-member.sort((x, y) => x['last_name'].compareTo(y['first_name']));
-print('The list with the addition of Mathieu Martin:');
-print('');
-print_row(member);
 }
-Sorting1(member);
-}
-}
-// Unable to do the removal and the update parts.
-
 
 void main() { // Inspiré d'un collègue, Monsieur Olivier Tremblay
 ex08_1(); 
