@@ -1,5 +1,5 @@
 library ex8lib;
-List associate(List member) { //For exercice #1. This code was inspired by: https://github.com/leduy10/ex08.git
+List associate(List member) { 
 List rep = new List();
 Map sort = member.elementAt(0);
 rep.add(sort);
