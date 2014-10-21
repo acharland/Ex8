@@ -1,5 +1,5 @@
 library ex8lib;
-List associate(List member) { 
+List associate(List member) { //For exercice #1. This code was inspired by: https://github.com/leduy10/ex08.git
 List rep = new List();
 Map sort = member.elementAt(0);
 rep.add(sort);
@@ -50,12 +50,19 @@ returnList.add(a);
 return returnList;
 }
 var member = [
-{"association_name": "IS", "first_name": "Dzenan", "last_name": "Ridjanovic", "email": "dr@gmail.com"},
-{"association_name": "IS", "first_name": "Robert", "last_name": "Nelson", "email": "rn@gmail.com"},
-{"association_name": "CS", "first_name": "David", "last_name": "Curtis", "email": "dc@gmail.com"},
+{"associationName": "IS", "first_name": "Dzenan", "last_name": "Ridjanovic", "email": "dr@gmail.com"},
+{"associationName": "IS", "first_name": "Robert", "last_name": "Nelson", "email": "rn@gmail.com"},
+{"associationName": "CS", "first_name": "David", "last_name": "Curtis", "email": "d@gmail.com"},
 ];
 print_row(var row){
 for(var n in row){
 print(n);
+}
+test(var first_name, var last_name, var member){
+for(var n in member){
+if(n['first_name'] == first_name && n['last_name'] == last_name)
+return true;
+}
+return false;
 }
 }
