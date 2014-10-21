@@ -58,11 +58,4 @@ print_row(var row){
 for(var n in row){
 print(n);
 }
-test(var first_name, var last_name, var member){
-for(var n in member){
-if(n['first_name'] == first_name && n['last_name'] == last_name)
-return true;
-}
-return false;
-}
 }
