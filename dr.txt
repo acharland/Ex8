@@ -1,0 +1,40 @@
+ex08
+
+11/20
+
+// Inspired by a colleague, Mr Olivier Tremblay
+
+-1
+pas d'une application Web
+pubspec.yaml:
+name: ex8
+description: A sample web application
+dependencies:
+  browser: any
+
+-1  
+formatage
+void ex08_1(){
+var a1 = ('${associate(member)}');
+-->
+void ex08_1() {
+  var a1 = ('${associate(member)}');
+
+library ex8lib;
+List associate(List member) { 
+List rep = new List();
+-->  
+library ex8lib;
+
+List associate(List member) { 
+  List rep = new List();
+
+8.1
+-1 GIVEN ASSOCIATION
+Sort the list of members of a GIVEN ASSOCIATION first by the last name, 
+THEN by the first name.
+-1 THEN
+
+-5
+8.2
+Create a CLASS MODEL with associations and members...
