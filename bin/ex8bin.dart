@@ -41,7 +41,7 @@ void ex08_2(){
   var player7 = new Member("BOS", "Brad", "Marchand", "bmarchand@bruins.com");
   bruins.add(player7);
   team2.addMember(player7);
-  team1.deleteMember(Marchand); //ne semble pas fonctionner??
+  team1.deleteMember(bmarchand@bruins.com); 
   team2.editMember("BOS", "Zdeno", "Chara", "zchara@captain-bruins.com"); 
   
   print('$team1 $canadiens');
