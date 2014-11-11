@@ -17,7 +17,7 @@ a given letter.''');
 print('');
 print(' The association that starts by $letter is: $a2');
 }
-void ex08_2(){
+void ex08_2(){ // Question 2 (Update)
   print('');
   print('Q2');
   print('');
