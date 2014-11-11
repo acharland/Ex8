@@ -37,7 +37,6 @@ void ex08_2(){ // Question 2 (Update)
     bruins.add(player5);
    var player6 = new Member("BOS", "Patrice", "Bergeron", "pbergeron@nhl.com");
      bruins.add(player6);
-// 2.2 Provide the maintenance of the model by providing additions, removals and updates of entities.
   var player7 = new Member("BOS", "Brad", "Marchand", "bmarchand@bruins.com");
   bruins.add(player7);
   team2.addMember(player7);
