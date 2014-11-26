@@ -62,35 +62,43 @@ print(n);
 }
 // Question 2
 class Team {
-String abreviation; 
+String abreviation;
 String name;
 String description;
 var player_team = new List();
-Team(var this.abreviation, var this.name, var this.description); 
+
+Team(String this.abreviation,
+ String this.name, 
+ String this.description);
+
 String toString() {
-return "List of associations : Association: ${abreviation} But : ${name}\n Description : ${description}";
+return '{' 'Team: '
+'Abreviation : ${abreviation}'
+'Name : ${name}'
+'description : ${description}'
+'}'; 
+} 
+addPlayer(Player player) {
+player_team.add(player);
 }
-addPlayers(Players players) { 
-player_team.add(players);
-}
-deletePlayer(String email) {
+
+deletePlayer(String email) { // Doesn't work...
 for (var i = 0; i < Team.length; i++) {
-if (Team[i].email == email) {
-Team.removeAt(i);
+if (player_team[i].email == email) {
+player_team.removeAt(i);
 }
 }
 }
 editPlayer(String abreviation, String first_name, String last_name, String email) {
-for (var i = 0; i < NHL_team.length; i++) {
-if (Team[i]["First name"] == first_name && NHL_team[i]["Last name"] == last_name) {
-Team[i]["Abreviation"] = abreviation;
-Team[i]["First name"] = first_name;
-Team[i]["Last Name"] = last_name;
-Team[i]["Email"] = email;
+for (var i = 0; i < player_team.length; i++) {
+if (player_team[i]["First name"] == first_name && player_team[i]["Last name"] == last_name) {
+player_team[i]["Abreviation"] = abreviation;
+player_team[i]["First name"] = first_name;
+player_team[i]["Last Name"] = last_name;
+player_team[i]["Email"] = email; }
 }
 }
-}
-}
+} 
 // 2.1 Create a class model with members
 class Player {
 String abreviation;
@@ -102,19 +110,23 @@ Player(String this.abreviation,
 String this.first_name,
 String this.last_name,
 String this.email);
+
 String toString() {
-return "Players : Abreviation : ${abreviation}  First name: ${first_name}"
-"Last name: ${last_name} email: ${email}";
-}
+  return '{' 'Team: \n'
+  'abreviation : ${abreviation}'
+  'first name : ${abreviation}'
+  'last name : ${last_name}\n'
+  'email : ${email}\n'
+  '}';}
 // 2.2 Provide the maintenance of the model by providing additions, removals and updates of entities.
-addTeam(Team team) {
-list_players.add(team);
-}
-deleteTeam(Team team) {
-for (var i = 0; i < list_players.length; i++) {
-if (list_players[i].name == abreviation.name) {
-list_players.removeAt(i);
-}
-}
-}
-}
+  addTeam(Team team) {
+  list_players.add(team);
+  }
+  deleteTeam(Team team) {
+  for (var i = 0; i < list_players.length; i++) {
+  if (list_players[i].name == team.name) {
+  list_players.removeAt(i);
+  }
+  }
+  }
+  }
