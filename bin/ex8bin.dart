@@ -18,37 +18,39 @@ print('');
 print(' The association that starts by $letter is: $a2');
 }
 void ex08_2(){ // Question 2 (Update)
-  print('');
-  print('Q2');
-  print('');
-  List canadiens = new List();
-  var team1 = new Team("MTL", "Montreal Canadiens", "Players");
-  var player1 = new Player("MTL", "Carey", "Price", "cprice@canadiens.com");
-  canadiens.add(player1);
-  var player2 = new Member("MTL", "David", "Desharnais", "ddesharnais@canadiens.com");
-   canadiens.add(player2);
-  var player3 = new Member("MTL", "Tomas", "Plekanec", "tplekanec@canadiens.com");
-    canadiens.add(player3);
-  List bruins = new List();
-  var team2 = new Team("BOS", "Boston Bruins", "Players");
-   var player4 = new Member("BOS", "Zdeno", "Chara", "zchara@bruins.com");
-   bruins.add(player4);
-   var player5 = new Member("BOS", "Milan", "Lucic", "mlucic@bruins.com");
-    bruins.add(player5);
-   var player6 = new Member("BOS", "Patrice", "Bergeron", "pbergeron@nhl.com");
-     bruins.add(player6);
-  var player7 = new Member("BOS", "Brad", "Marchand", "bmarchand@bruins.com");
-  bruins.add(player7);
-  team2.addMember(player7);
-  team1.deleteMember(bmarchand@bruins.com); 
-  team2.editMember("BOS", "Zdeno", "Chara", "zchara@captain-bruins.com"); 
-  
-  print('$team1 $canadiens');
- print('');
- print('$team2 $bruins');
- } 
+print('');
+print('Q2');
+print('');
+List canadiens = new List();
 
+var team1 = new Team("MTL", "Montreal Canadiens", "Players"); // Debug Current Instruction Pointer ????
+var player1 = new Player("MTL", "Carey", "Price", "cprice@canadiens.com");
+canadiens.add(player1);
+var player2 = new Player("MTL", "David", "Desharnais", "ddesharnais@canadiens.com");
+canadiens.add(player2);
+var player3 = new Player("MTL", "Tomas", "Plekanec", "tplekanec@canadiens.com");
+canadiens.add(player3);
+
+List bruins = new List();
+
+var team2 = new Team("BOS", "Boston Bruins", "Players");
+var player4 = new Player("BOS", "Zdeno", "Chara", "zchara@bruins.com");
+bruins.add(player4);
+var player5 = new Player("BOS", "Milan", "Lucic", "mlucic@bruins.com");
+bruins.add(player5);
+var player6 = new Player("BOS", "Patrice", "Bergeron", "pbergeron@nhl.com");
+bruins.add(player6);
+var player7 = new Player("BOS", "Brad", "Marchand", "bmarchand@bruins.com");
+bruins.add(player7);
+team2.addPlayer(player7);
+team1.deletePlayer("bmarchand@bruins.com");
+team2.editPlayer("BOS", "Zdeno", "Chara", "zchara@captain-bruins.com");
+
+print('$team1 $canadiens');
+print('');
+print('$team2 $bruins');
+}
 void main() { // Inspiré d'un collègue, Monsieur Olivier Tremblay
-ex08_1(); 
-ex08_2(); 
+ex08_1();
+ex08_2();
 }
